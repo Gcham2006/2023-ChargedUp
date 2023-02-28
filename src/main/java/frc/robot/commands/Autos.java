@@ -16,31 +16,32 @@ public final class Autos {
   }
 
   public static CommandBase testAuto(Drivetrain drivetrain, double apriltagid){
-    if (apriltagid == 1) {
+    if (apriltagid == 1 || apriltagid == 8) {
       return Commands.sequence(
-
+        //turn around 180degrees
+        //drive forwards 18 ft
+        //claw open
+        //claw down
+        //claw close
+        //claw up 
+        //turn left 90 degrees
+        //forward about 4 ft
+        //turn left 90 degrees 
+        //forward forward 18 ft
+        //claw open
       );
   } 
-    else if (apriltagid == 3) {
+    else if (apriltagid == 2 || apriltagid == 7) {
       return Commands.sequence(
       
       );
   } 
-    else if (apriltagid == 5) {
+    else if (apriltagid == 3 || apriltagid == 6) {
         return Commands.sequence(
 
       );
-  }
-    else if (apriltagid == 7){
-        return Commands.sequence(
-
-      );
-  }
-    else if (apriltagid == 8 ) {
-          return Commands.sequence(
-
-      );
-  }
+    }
+  
     else{
           return Commands.sequence(
 
