@@ -19,9 +19,10 @@ public final class Autos {
     if (apriltagid == 1 || apriltagid == 8) {
       return Commands.sequence(
         //turn around 180degrees
-        //drive forwards 18 ft
+        //drive forwards 16 ft
         //claw open
         //claw down
+        //drive forward 2 ft
         //claw close
         //claw up 
         //turn left 90 degrees
@@ -33,18 +34,44 @@ public final class Autos {
   } 
     else if (apriltagid == 2 || apriltagid == 7) {
       return Commands.sequence(
-      
+        //turn around 180degrees
+        //drive forwards 16 ft
+        //turn right 90 degrees 
+        // drive forward 4 feet
+        //turn left90 degrees
+        //claw open
+        //claw down
+        //driveforward 2 feet
+        //claw close
+        //claw up 
+        //turn left 90 degrees
+        //forward about 2 ft
+        //turn left 90
+        //drive forwards 18 feet
+        //claw open
       );
   } 
     else if (apriltagid == 3 || apriltagid == 6) {
-        return Commands.sequence(
-
+      return Commands.sequence(
+        //turn around 180 degrees 
+        //drive forward 16 ft
+        //claw open
+        //claw down
+        //drive forward 2 ft
+        //claw close
+        //claw up 
+        //turn left 90 degrees
+        //drive forward 3 ft
+        //turn left 90 degrees
+        //drive forward 18 ft
+        //claw open
       );
     }
   
     else{
           return Commands.sequence(
-
+            new DriveDistance(50, 50, drivetrain),
+            new DriveDistance(50, 50, drivetrain)
       );
   }
             }
